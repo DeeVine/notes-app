@@ -1,0 +1,65 @@
+*:focus {
+  outline: 0;
+  outline: none;
+}
+
+textarea {
+    resize: none;
+    overflow: hidden;
+    width: 100%;
+    min-height: 50px;
+}
+
+/* Main Feature */
+.navbar {
+  margin-top: 20px;
+  background-color: #ddd;
+  overflow: hidden;
+  max-height: 1800px;
+  -webkit-transition: max-height 0.2s; 
+  -moz-transition: max-height 0.2s; 
+  -ms-transition: max-height 0.2s; 
+  -o-transition: max-height 0.2s; 
+  transition: max-height 0.2s;
+}
+.navbar.collapsed {
+  max-height: 0;
+}
+
+/* Other */
+ 
+.navbar-toggle {
+  line-height: 40px;
+  padding: 0 20px;
+  font-size: 12px;
+  border: none;
+  background-color: salmon;
+  color: #111;
+}
+.navbar-toggle:hover {
+  background-color: lightsalmon; 
+}
+.nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar li a {
+  display: block;
+  line-height: 40px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #373737;
+}
+.navbar li a:hover {
+  background-color: #eee;
+}
+
+
+body {
+  padding: 20px;
+}
+footer {
+  margin-top: 5vh;
+  padding-top: 20px;
+}

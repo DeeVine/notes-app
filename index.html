@@ -1,0 +1,64 @@
+<!-- how to move auto_grow function into javascript file if it loads after DOM? -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Notes App</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<script>
+	
+	function auto_grow(element) {
+	    element.style.height = "5px";
+	    element.style.height = (element.scrollHeight)+"px";
+	}
+
+</script>
+
+<body>
+
+	<button class='addElement'>add element</button>
+
+	<div id='testing'> Top testing div
+		
+		<p>outside div</p>
+
+		<div class='paragraphs'>
+		<p> paragraph element 1</p>
+		<p> paragraph element 2</p>
+		</div>
+	</div>
+
+	<div class='note-section'>
+
+		<textarea onkeyup="auto_grow(this)"></textarea>
+
+		<textarea>
+			
+			temporary text
+
+		</textarea>
+		<!-- <button id="navToggle" class="navbar-toggle">Nav Toggle</button>
+		<nav id="mainNav" class="navbar">
+		  <ul class="nav">
+		    <li><a href="#">Item 1</a></li>
+		    <li><a href="#">Item 2</a></li>
+		    <li><a href="#">Item 3</a></li>
+		    <li><a href="#">Item 4</a></li>
+		  </ul>
+		  <span class='datenow'></span>
+		</nav> -->
+	</div>
+
+	
+
+</body>
+
+<script src='javascript.js'></script>
+
+
+</html>
